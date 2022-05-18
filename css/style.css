@@ -26,12 +26,16 @@ input:focus::-moz-placeholder {
 
 /* РАЗДЕЛ ШАПКИ САЙТА, НАВИГАЦИЯ, ЛИЧНЫЙ КАБИНЕТ */
 
+.header {
+    background-color: #000000;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 22px;
-    padding-bottom: 5px
+    padding-bottom: 15px;
 }
 
 .logo-img {
@@ -41,10 +45,6 @@ input:focus::-moz-placeholder {
 
 .nav {
     display: flex;
-}
-
-.header {
-    background-color: #000000;
 }
 
 
@@ -122,6 +122,8 @@ input:focus::-moz-placeholder {
     transition: .2s;
 }
 
+/* Вторая шапка с поиском и навигацией */
+
 .header-second {
     position: absolute;
     background-color: rgba(0,0,0,0.4);
@@ -146,13 +148,6 @@ input:focus::-moz-placeholder {
     line-height: 25px;
 }
 
-.nav__item-second::after {
-    content: url(/img/rectangle.svg);
-    position: absolute;
-    right: -15px;
-
-}
-
 .nav__item-second:not(:nth-child(5)) {
     margin-right: 111px;
 }
@@ -161,6 +156,12 @@ input:focus::-moz-placeholder {
     margin-right: 350px;
 } 
 
+.nav__link-row {
+    position: absolute;
+    right: -15px;
+}
+
+
 .nav__link-second {
     transition: 0.2s;
 }
@@ -168,6 +169,10 @@ input:focus::-moz-placeholder {
 .nav__link-second:hover {
     color: #7943A4;
     transition: 0.2s;
+}
+
+.nav__item-row:hover {
+    stroke: #7943A4;
 }
 
 .nav__link-second:active {
@@ -206,9 +211,6 @@ input:focus::-moz-placeholder {
     color: #ffffff;
 }
 
-.header-second {
-    display: none;
-}
 
 /* БЛОК HERO, TITLE, ССЫЛКА В КОНЕЦ СТРАНИЦЫ ДЛЯ ПОДПИСКИ */
 
@@ -224,8 +226,9 @@ input:focus::-moz-placeholder {
     font-size: 72px;
     line-height: 82.8px;
     font-weight: 700;
-    margin: 0;
     color: #ffffff;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .hero__text {
@@ -236,16 +239,40 @@ input:focus::-moz-placeholder {
     color: #ffffff;
 }
 
-.hero__link {
-    padding: 22px 35px 22px 35px;
-    border-radius: 100px;
-    background-color: #9D5CD0;
-}
-
 .hero__link-btn {
+    display: inline-block;
+    padding: 20px 30px 20px 30px;
     font-family: var(--main-font);
     font-size: 18px;
     font-weight: 700;
     line-height: 24.5px;
+    border-radius: 100px;
+    background-color: #9D5CD0;
+    text-align: center;
 }
 
+.hero__link-btn:hover {
+    outline: 3px solid #D1A9F0;
+
+}
+
+.hero__link-btn:focus {
+    outline-offset: 2px;
+    outline:2px solid #C283F3;
+}
+
+.hero__link-btn:active {
+    background-color: #7943A4;
+    outline: 3px solid #D1A9F0;
+    outline-offset: 0;
+}
+
+.hero-block {
+    padding-top: 140px;
+    padding-right: 1000px;
+    padding-bottom: 122px;
+}
+
+.hero__text {
+    margin-bottom: 92px;
+}

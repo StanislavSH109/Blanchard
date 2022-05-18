@@ -86,8 +86,8 @@ input:focus::-moz-placeholder {
     background-color: #000000;
 }
 
-.nav__item:last-child {
-    margin-right: 424px;
+.nav__item:nth-child(6) {
+    margin-right: 410px;
 }
 
 .nav__login {
@@ -103,15 +103,30 @@ input:focus::-moz-placeholder {
     cursor: pointer;
 }
 
-.nav__login::after {
-    content: url(/img/row.svg);
-    position: absolute;
-    right: 65px;
+
+.nav__login-img {
+    transition: .2s;
 }
 
+.nav__login-img svg {
+    transition: .2s;
+}
+
+.nav__login-img:hover {
+    color: #7943A4;
+    transition: .2s;
+}
+
+.nav__login-img:hover svg {
+    fill: #7943A4;
+    transition: .2s;
+}
 
 .header-second {
-    background: green;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    right: 0;
+    left: 0;
 }
 
 
@@ -189,5 +204,48 @@ input:focus::-moz-placeholder {
     line-height: 24.51px;
     font-weight: 400;
     color: #ffffff;
+}
+
+.header-second {
+    display: none;
+}
+
+/* БЛОК HERO, TITLE, ССЫЛКА В КОНЕЦ СТРАНИЦЫ ДЛЯ ПОДПИСКИ */
+
+.hero__container {
+    background-image: url(/img/birmingham.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.hero__title {
+    font-family: var(--main-font);
+    font-size: 72px;
+    line-height: 82.8px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.hero__text {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.hero__link {
+    padding: 22px 35px 22px 35px;
+    border-radius: 100px;
+    background-color: #9D5CD0;
+}
+
+.hero__link-btn {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.5px;
 }
 

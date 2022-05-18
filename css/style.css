@@ -19,6 +19,10 @@ input:focus::-moz-placeholder {
     color: transparent;
 }
 
+label {
+    display: block;
+}
+
 .container {
     max-width: 1920px;
     padding: 0 160px 0 160px;
@@ -136,8 +140,8 @@ input:focus::-moz-placeholder {
     display: flex;
     align-items: center;
     padding-left: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .nav__item-second {
@@ -171,8 +175,20 @@ input:focus::-moz-placeholder {
     transition: 0.2s;
 }
 
-.nav__item-row:hover {
+.nav__link-second svg {
+    fill: none;
+    stroke: white;
+    transition: .2s;
+}
+
+.nav__link-second:hover svg {
     stroke: #7943A4;
+    transition: .2s;
+}
+
+.nav__link-second:active svg {
+    stroke: #C283F3;
+    transition: .2s;
 }
 
 .nav__link-second:active {
@@ -217,7 +233,7 @@ input:focus::-moz-placeholder {
 .hero__container {
     background-image: url(/img/birmingham.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
 }
 
@@ -275,4 +291,98 @@ input:focus::-moz-placeholder {
 
 .hero__text {
     margin-bottom: 92px;
+}
+
+.hero__section {
+    margin-bottom: 80px;
+}
+
+/* -----    Блок "О нас" ------ */
+
+.container__about-us {
+    padding-right: 670px;
+}
+
+.about-us__title {
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.about-us__text {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.about-us {
+    margin-bottom: 80px;
+}
+
+
+/* ---- Секция с Галереей ---- */
+
+.gallery__container {
+    background-image: url(/img/gallery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery__list {
+    display: flex;
+    margin: 0;
+}
+
+.gallery__image {
+    margin-right: 50px;
+}
+
+.gallery__item-image {
+    display: flex;
+}
+
+.gallery__item-title {
+    color: #ffffff;
+    margin: 0;
+}
+
+.gallery__item-filter {
+    color: #ffffff;
+    margin: 0;
+}
+
+label {
+    color: #ffffff;
+}
+
+.gallery__image-first {
+    background-image: url(/img/gallery_image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+}
+
+.gallery__image-second {
+    background-image: url(/img/gallery_image2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+}
+
+.gallery__image-third {
+    background-image: url(/img/gallery_image3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
 }

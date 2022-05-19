@@ -1,6 +1,9 @@
+
+
 :root {
     --main-font: 'Open Sans', sans-serif;
 }
+
 
 ul {
     list-style: none;
@@ -22,17 +25,22 @@ input:focus::-moz-placeholder {
 label {
     display: block;
 }
+.header {
+    background-color: #000000;
+    max-width: 1920px;
+    margin: 0 auto;
+    /* padding: 0 160px 0 160px; */
+}
 
 .container {
     max-width: 1920px;
     padding: 0 160px 0 160px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* РАЗДЕЛ ШАПКИ САЙТА, НАВИГАЦИЯ, ЛИЧНЫЙ КАБИНЕТ */
 
-.header {
-    background-color: #000000;
-}
 
 .header-container {
     display: flex;
@@ -207,6 +215,7 @@ label {
 
 .search__form {
     position: relative;
+    
 }
 
 .search__form::before {
@@ -330,6 +339,7 @@ label {
 /* ---- Секция с Галереей ---- */
 
 .gallery__container {
+    display: flex;
     background-image: url(/img/gallery.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,17 +351,53 @@ label {
     margin: 0;
 }
 
-.gallery__image {
+
+.gallery__image:not(:nth-child(3)) {
     margin-right: 50px;
 }
 
+
 .gallery__item-image {
     display: flex;
+    position: relative;
+    padding-top: 165px;
 }
 
 .gallery__item-title {
-    color: #ffffff;
     margin: 0;
+    padding-top: 80px;
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+
+.gallery__item-select {
+    margin-bottom: 150px;
+}
+
+.gallery__item-text {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: #ffffff;
+} 
+
+select {
+    border: 1px solid white;
+    background: none;
+    color: #ffffff;
+    width: 400px;
+    height: 40px;
+}
+
+.gallery__item:nth-child(1) {
+    margin-right: 50px;
 }
 
 .gallery__item-filter {
@@ -363,7 +409,9 @@ label {
     color: #ffffff;
 }
 
+
 .gallery__image-first {
+    position: relative;
     background-image: url(/img/gallery_image1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -377,6 +425,7 @@ label {
     background-position: center;
     width: 350px;
     height: 350px;
+    
 }
 
 .gallery__image-third {
@@ -385,4 +434,74 @@ label {
     background-position: center;
     width: 350px;
     height: 350px;
+}
+
+.gallery__item-slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    top: 110px;
+}
+
+.gallery__item-row-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #666666;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.gallery__item-count {
+    margin-right: 12px;
+}
+
+.gallery__item-row-forward {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #666666;
+    cursor: pointer;
+}
+
+.checkbox__label {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox__custom {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__custom::after {
+    content: url(/img/ellipse.svg);
+    padding-bottom: 5px;
+}
+
+.checkbox__custom-text {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 15px;
 }

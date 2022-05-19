@@ -29,7 +29,6 @@ label {
     background-color: #000000;
     max-width: 1920px;
     margin: 0 auto;
-    /* padding: 0 160px 0 160px; */
 }
 
 .container {
@@ -247,13 +246,13 @@ label {
 }
 
 .hero__title {
+    margin: 0;
+    margin-bottom: 15px;
     font-family: var(--main-font);
     font-size: 72px;
     line-height: 82.8px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0;
-    margin-bottom: 15px;
 }
 
 .hero__text {
@@ -332,14 +331,14 @@ label {
 }
 
 .about-us {
-    margin-bottom: 80px;
+    margin-bottom: 68px;
 }
 
 
 /* ---- Секция с Галереей ---- */
 
 .gallery__container {
-    display: flex;
+    margin: 0 auto;
     background-image: url(/img/gallery.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -349,6 +348,8 @@ label {
 .gallery__list {
     display: flex;
     margin: 0;
+    padding-left: 0;
+    padding-bottom: 75px;
 }
 
 
@@ -376,7 +377,7 @@ label {
 
 
 .gallery__item-select {
-    margin-bottom: 150px;
+    margin-bottom: 172px;
 }
 
 .gallery__item-text {
@@ -435,6 +436,8 @@ label {
     width: 350px;
     height: 350px;
 }
+
+
 
 .gallery__item-slider {
     display: flex;
@@ -499,9 +502,199 @@ label {
 }
 
 .checkbox__custom-text {
+    margin: 0;
+    padding-left: 20px;
     font-family: var(--main-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    padding-left: 15px;
+}
+
+/*---- Секция с каталогом ---- */
+
+.container__catalog {
+    padding: 80px 0 0 0;
+}
+
+.catalog {
+    padding-right: 680px;
+}
+
+.catalog__person {
+    display: flex;
+}
+
+.catalog__person-leftside {
+    width: 49%;
+}
+
+.catalog__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #333333;
+}
+
+.catalog__text {
+    margin: 0 0 50px 0;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+}
+
+.catalog__person-image {
+    background-image: url(/img/person.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 470px;
+    margin-bottom: 30px;
+}
+
+.catalog__person-title {
+    margin: 0 0 15px 0;
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #333333;
+}
+
+.catalog__person-date {
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #999999;
+}
+
+.catalog__person-text {
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+}
+
+.catalog__person-item {
+    margin: 0;
+    padding: 41px 541px 41px 0;
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #7943A4;
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+}
+
+/* ----- Блок "События" ----- */
+
+.event__title {
+    margin: 0 0 16px 0;
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #333333;
+}
+
+.event__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.event__item {
+    margin-bottom: 12px;
+    border: 1px solid #CACACA;
+    max-width: 31.3%;
+}
+
+.event__item:not(:last-child) {
+    margin-right: 50px;
+} 
+
+.event__item-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px 0 50px;
+}
+
+
+.event__item-image1 {
+    margin-bottom: 13px;
+    background-image: url(/img/event-image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 300px;
+}
+
+.event__item-image2 {
+    margin-bottom: 13px;
+    background-image: url(/img/event-image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 300px;
+}
+
+.event__item-image3 {
+    margin-bottom: 13px;
+    background-image: url(/img/event-image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 300px;
+}
+
+
+.event__item-date {
+    margin: 0 0 13px 0;
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #999999;
+}
+
+.event__item-title {
+    margin: 0 0 10px 0;
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #333333;
+}
+
+.event__item-text {
+    margin: 0 0 75px 0;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+}
+
+.event__item-link {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;  
 }

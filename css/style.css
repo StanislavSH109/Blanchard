@@ -790,6 +790,15 @@ label {
     color: #333333;
 }
 
+.form__list-item-input[placeholder] {
+    margin-right: 20px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+
 .form__list-item-address {
     font-family: var(--main-font);
     font-size: 16px;
@@ -833,6 +842,10 @@ label {
 
 .form__list-social-links {
     display: flex;
+}
+
+.just-validate-error-label {
+    color: #000000;
 }
 
 .link-social-icon {

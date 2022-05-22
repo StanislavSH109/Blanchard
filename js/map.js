@@ -5,7 +5,15 @@ ymaps.ready(function () {
             controls: ['zoomControl', 'geolocationControl'] 
         }, {
             zoomControlSize: 'small',
-            zoomControlPositionLeft: '300',
+            zoomControlPosition: {
+               right: '5px',
+               bottom: '300px'
+            },
+            geolocationControlPosition: {
+                right: '5px',
+                bottom: '265px'
+            },
+
             searchControlProvider: 'yandex#search'
         }) 
 

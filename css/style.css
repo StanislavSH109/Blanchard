@@ -877,6 +877,18 @@ label {
 [class*="ground-pane"] {
     filter: grayscale(1);
 }
+/* 
+.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+    background-image: url(../img/);
+} */
+
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+
+.ymaps-2-1-79-copyright__content-cell {
+    display: none;
+}
 
 /* ------ FOOTER ------ */
 .footer__items {

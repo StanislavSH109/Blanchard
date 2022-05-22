@@ -871,8 +871,12 @@ label {
     margin: 0 auto;
     max-width: 1920px;
     height: 700px;
+
 }
 
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
 
 /* ------ FOOTER ------ */
 .footer__items {

@@ -12,6 +12,10 @@ validate.addField('#number', [{
 }
 ]);
 
-var myClass = document.body.classList.add('link-social-icon');
 
-alert(myClass)
+let form = document.querySelector('.just-validate-error-label');
+
+form.classList.add('.form__list-item-button-custom');
+
+console.log(form);
+

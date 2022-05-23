@@ -814,7 +814,16 @@ label {
     border: 1px solid #333333;
     border-radius: 100px;
     padding-left: 20px;
+    cursor: pointer;
+    transition: .4s;
 }
+
+.form__list-item-input:hover {
+    background-color: #EAEAEA;
+    transition: .4s;
+}
+
+
 
 .form__list-item-button {
     width: 351px;
@@ -829,6 +838,25 @@ label {
     text-align: center;
     color: #9D5CD0;
     cursor: pointer;
+    transition: .4s;
+
+}    
+
+.form__list-item-button:hover {
+    color: #ffffff;
+    background-color: #9D5CD0;
+    transition: .4s;
+}
+
+.form__list-item-button:focus {
+    outline: none;
+    color: #ffffff;
+    background-color: #9D5CD0;
+    transition: .4s;
+}
+
+.form__list-item-button-custom {
+    color: #000000;
 }
 
 .form__list-item-social {
@@ -840,13 +868,17 @@ label {
     color: #333333;
 }
 
+.just-validate-error-label {
+    color: #000000;
+}
+
 .form__list-social-links {
     display: flex;
 }
 
-.just-validate-error-label {
+/* .just-validate-error-label {
     color: #000000;
-}
+} */
 
 .link-social-icon {
     position: relative;

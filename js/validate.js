@@ -16,6 +16,3 @@ validate.addField('#number', [{
 let form = document.querySelector('.just-validate-error-label');
 
 form.classList.add('.form__list-item-button-custom');
-
-console.log(form);
-

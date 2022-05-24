@@ -703,6 +703,9 @@ label {
     padding-bottom: 40px;
 }
 
+/* ---------- ПРОЕКТЫ ------------- */
+
+
 .project__title {
     margin: 0 0 16px 0;
     font-family: var(--main-font);
@@ -738,6 +741,51 @@ label {
     margin: 0 0 80px 0;
 }
 
+.project__partners-item-elements {
+    /* padding: 44px 103px; */
+    border: 1px solid #CACACA;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.project__partners-item-elements:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
+
+.project__partners-item-elements-freelands {
+    background-image: url(../img/freelands.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 244px;
+    height: 63px;
+
+}
+
+.project__partners-item-elements-freelands-institute {
+    background-image: url(../img/institute-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 244px;
+    height: 63px;
+}
+
+.project__partners-item-elements-freelands-workhouse {
+    background-image: url(../img/workhouse-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 244px;
+    height: 63px;
+}
+
+.project__partners-item-elements-link {
+    display: block;
+    padding: 44px 103px;
+}
+
+
 .project__partners-item-row {
     width: 30px;
     height: 30px;
@@ -745,6 +793,27 @@ label {
     border: 1px solid #ECECEC;
     border-radius: 50%;
     cursor: pointer;
+    transition: .4s;
+}
+
+.project__partners-item-row:hover {
+    background-color: #D1A9F0;
+    transition: .4s;
+
+}
+
+.project__partners-item-row:active {
+
+}
+
+.project__partners-item-row-link:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.project__partners-item-row:focus {
+    border: 1px solid #9D5CD0;
+    border-radius: 50%;
 }
 
 .row__left {
@@ -759,10 +828,6 @@ label {
     background-position: center;
 }
 
-.project__partners-item-elements {
-    padding: 44px 103px;
-    border: 1px solid #CACACA;
-}
 
 /* ----- Блог с формой заявки ----- */
 
